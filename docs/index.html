@@ -3,30 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Circuito+ — assistência técnica acadêmica fictícia para avaliação e reparo de celulares."
-    />
-    <title>Circuito+ | Assistência técnica para celulares</title>
+    <meta name="theme-color" content="#F6F8FB" />
+    <meta name="description" content="Circuito+ — diagnóstico claro e reparos cuidadosos para dar uma segunda chance ao seu celular. Projeto acadêmico fictício." />
+    <title>Circuito+ | Uma segunda chance para seu celular</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <script src="assets/js/main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
+    <svg class="svg-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="icon-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="icon-arrow-diagonal" viewBox="0 0 24 24">
+          <path d="M6 18 18 6M6 6h12v12" />
+        </symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24">
+          <path d="m5 12 4 4L19 6" />
+        </symbol>
+        <symbol id="icon-circuit" viewBox="0 0 32 32">
+          <path d="M21 8h-8l-5 5v9h10l5-5" />
+          <path d="M22 4v8m-4-4h8M8 17H4m10 5v6" />
+          <circle cx="4" cy="17" r="1.5" />
+          <circle cx="14" cy="28" r="1.5" />
+          <circle cx="23" cy="17" r="1.5" />
+        </symbol>
+      </defs>
+    </svg>
+
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="#inicio" aria-label="Circuito+, início">
-          <span class="brand-mark" aria-hidden="true">C+</span>
+          <span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#icon-circuit" /></svg></span>
           <span>Circuito<span class="brand-plus">+</span></span>
         </a>
-        <a class="button button--small" href="#contato">Solicitar avaliação</a>
+        <p class="header-caption">Cuidado em cada conexão.</p>
+        <a class="button button--small" href="#contato">Solicitar avaliação <svg class="icon" aria-hidden="true"><use href="#icon-arrow-diagonal" /></svg></a>
       </div>
     </header>
 
@@ -34,146 +51,110 @@
       <section class="hero" id="inicio" aria-labelledby="hero-title">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Assistência técnica para celulares</p>
-            <h1 id="hero-title">Seu celular merece uma segunda chance.</h1>
-            <p class="hero-lead">
-              Diagnóstico claro e reparos cuidadosos para você entender as possibilidades do seu aparelho antes de decidir os próximos passos.
-            </p>
+            <p class="eyebrow hero-eyebrow"><span class="signal-dot" aria-hidden="true"></span> Assistência técnica para celulares</p>
+            <h1 id="hero-title">Seu celular.<br />Uma segunda<br /><span class="title-accent">chance.</span></h1>
+            <p class="hero-lead">Nem todo problema precisa ser o fim da linha. Entenda o que acontece com seu aparelho e descubra as possibilidades de reparo.</p>
+            <p class="hero-microcopy">Diagnóstico claro. Reparo cuidadoso.<br class="mobile-break" /> Próximos passos sem complicação.</p>
             <div class="hero-actions">
-              <a class="button button--primary" href="#contato">Solicitar avaliação</a>
+              <a class="button button--primary" href="#contato">Solicitar avaliação <svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></a>
+              <a class="button button--text" href="#como-funciona">Como funciona <span class="text-button-icon" aria-hidden="true">↗</span></a>
             </div>
-            <p class="hero-note">
-              <span aria-hidden="true">✦</span>
-              Orçamento e valores dependem de avaliação técnica.
-            </p>
+            <p class="hero-note"><span class="note-marker" aria-hidden="true"></span> Orçamento e valores dependem de avaliação técnica.</p>
           </div>
 
-          <div class="hero-art" aria-label="Ilustração de um celular em reparo">
-            <div class="hero-art__glow hero-art__glow--teal" aria-hidden="true"></div>
-            <div class="hero-art__glow hero-art__glow--amber" aria-hidden="true"></div>
-            <img src="assets/img/hero-reparo.svg" alt="Smartphone acompanhado de ferramentas de reparo" />
+          <div class="hero-visual">
+            <div class="hero-visual__heading" aria-hidden="true"><span><span class="tiny-cross">+</span> Bancada Circuito+</span><span>Diagnóstico · Cuidado · Reparo</span></div>
+            <div class="hero-art">
+              <span class="art-corner art-corner--top" aria-hidden="true"></span>
+              <span class="art-corner art-corner--bottom" aria-hidden="true"></span>
+              <img src="assets/img/hero-reparo.svg" width="640" height="620" alt="Ilustração de smartphone e ferramentas de reparo, com elementos de circuitos e diagnóstico" fetchpriority="high" />
+            </div>
+            <div class="hero-visual__caption"><span class="caption-line" aria-hidden="true"></span><p>Conectar o problema à solução.<br /><strong>É assim que o cuidado começa.</strong></p><svg class="icon" aria-hidden="true"><use href="#icon-circuit" /></svg></div>
           </div>
         </div>
+        <div class="container hero-bottom" aria-hidden="true"><span>Entender.</span><span class="circuit-rule"></span><span>Cuidar.</span><span class="circuit-rule"></span><span>Reconectar<span class="brand-plus">+</span></span></div>
       </section>
 
-      <section class="section services" aria-labelledby="servicos-title">
+      <section class="section services" id="servicos" aria-labelledby="servicos-title">
         <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">O que avaliamos</p>
-            <h2 id="servicos-title">Cuidado para os problemas mais comuns.</h2>
-            <p>
-              Cada solicitação começa com uma leitura atenta do que aconteceu e do que o seu aparelho precisa.
-            </p>
+          <div class="section-heading section-heading--split" data-reveal>
+            <div><p class="eyebrow"><span class="section-index">01</span> O que avaliamos</p><h2 id="servicos-title">O problema muda.<br />O cuidado, não.</h2></div>
+            <p>Da tela ao sistema, cada detalhe conta. O primeiro passo é entender os sinais que seu celular está dando.</p>
           </div>
 
           <div class="services-grid">
-            <article class="service-card">
-              <div class="icon-chip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="5" y="2.75" width="14" height="18.5" rx="2.3"></rect>
-                  <path d="M9 5.75h6M10.5 18.25h3"></path>
-                  <path d="m8.5 14.5 2.1-2.1 1.75 1.75 3-3"></path>
-                </svg>
+            <article class="service-card" data-reveal>
+              <div class="service-card__top"><span class="service-label">Imagem & toque</span><span class="technical-code" aria-hidden="true">/ 01</span></div>
+              <div class="service-art" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><rect class="icon-surface" x="20" y="8" width="40" height="64" rx="9" /><path d="M31 15h18M34 64h12M23 25h34M39 26l-6 12 11 2-8 13 15-7" /><circle class="icon-node" cx="59" cy="24" r="5" /></svg>
               </div>
-              <h3>Tela e display</h3>
-              <p>Trincas, falhas visuais ou toque que não responde como deveria.</p>
+              <h3>Tela e display</h3><p>Trincas, manchas ou um toque que já não responde como deveria.</p>
+              <div class="service-card__bottom"><span class="service-tag">Avaliação do display</span><span class="card-terminal" aria-hidden="true"></span></div>
             </article>
-
-            <article class="service-card">
-              <div class="icon-chip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="6.25" y="5.5" width="11.5" height="13" rx="1.7"></rect>
-                  <path d="M17.75 9.5h1.5a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1.5"></path>
-                  <path d="M11.75 8.5v3h2.5l-3 4v-3H8.75l3-4Z"></path>
-                </svg>
+            <article class="service-card service-card--mint" data-reveal>
+              <div class="service-card__top"><span class="service-label">Energia & autonomia</span><span class="technical-code" aria-hidden="true">/ 02</span></div>
+              <div class="service-art" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><rect class="icon-surface" x="22" y="15" width="36" height="55" rx="8" /><path d="M33 15V9h14v6M40 26l-9 17h11l-3 15 12-21H40l3-11M13 33H8m5 14H8m59-14h5m-5 14h5" /><circle class="icon-node" cx="58" cy="62" r="5" /></svg>
               </div>
-              <h3>Bateria</h3>
-              <p>Autonomia reduzida, desligamentos inesperados ou aquecimento frequente.</p>
+              <h3>Bateria</h3><p>Pouca autonomia, desligamentos inesperados ou aquecimento frequente.</p>
+              <div class="service-card__bottom"><span class="service-tag">Condição da bateria</span><span class="card-terminal" aria-hidden="true"></span></div>
             </article>
-
-            <article class="service-card">
-              <div class="icon-chip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M8 4.5v4M12 4.5v4M16 4.5v4"></path>
-                  <path d="M7 8.5h10v3.2a5 5 0 0 1-10 0V8.5Z"></path>
-                  <path d="M12 16.7v2.8M9 19.5h6"></path>
-                </svg>
+            <article class="service-card" data-reveal>
+              <div class="service-card__top"><span class="service-label">Conexão & carga</span><span class="technical-code" aria-hidden="true">/ 03</span></div>
+              <div class="service-art" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><path class="icon-surface" d="M24 27h32v13a16 16 0 0 1-32 0V27Z" /><path d="M32 27V13m16 14V13M40 56v6a9 9 0 0 0 9 9h10M33 35h14M18 20l-5-5m49 5 5-5" /><circle class="icon-node" cx="62" cy="71" r="4" /></svg>
               </div>
-              <h3>Conector de carga</h3>
-              <p>Dificuldade para carregar, encaixe instável ou conexão intermitente.</p>
+              <h3>Conector de carga</h3><p>Cabo que não encaixa, carga intermitente ou dificuldade para conectar.</p>
+              <div class="service-card__bottom"><span class="service-tag">Diagnóstico de conexão</span><span class="card-terminal" aria-hidden="true"></span></div>
             </article>
-
-            <article class="service-card">
-              <div class="icon-chip" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="6.2" y="6.2" width="11.6" height="11.6" rx="1.5"></rect>
-                  <path d="M9.5 2.8v3.4M14.5 2.8v3.4M9.5 17.8v3.4M14.5 17.8v3.4M2.8 9.5h3.4M17.8 9.5h3.4M2.8 14.5h3.4M17.8 14.5h3.4"></path>
-                  <path d="M9.5 12h5"></path>
-                </svg>
+            <article class="service-card service-card--blue" data-reveal>
+              <div class="service-card__top"><span class="service-label">Sistema & fluidez</span><span class="technical-code" aria-hidden="true">/ 04</span></div>
+              <div class="service-art" aria-hidden="true">
+                <svg viewBox="0 0 80 80" fill="none"><rect class="icon-surface" x="20" y="20" width="40" height="40" rx="9" /><path d="M31 20V10m18 10V10M31 60v10m18-10v10M20 31H10m10 18H10m50-18h10M60 49h10M29 43h7l5-12 5 18 5-6" /><circle class="icon-node" cx="60" cy="20" r="5" /></svg>
               </div>
-              <h3>Sistema e desempenho</h3>
-              <p>Lentidão, travamentos e comportamentos que atrapalham o uso diário.</p>
+              <h3>Sistema e desempenho</h3><p>Lentidão, travamentos e falhas que interrompem o seu dia a dia.</p>
+              <div class="service-card__bottom"><span class="service-tag">Análise de desempenho</span><span class="card-terminal" aria-hidden="true"></span></div>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section process" aria-labelledby="processo-title">
-        <div class="container process-layout">
-          <div class="section-heading section-heading--compact">
-            <p class="eyebrow">Um caminho simples</p>
-            <h2 id="processo-title">Como funciona</h2>
-            <p>Informações objetivas para transformar uma dúvida em uma decisão mais tranquila.</p>
+      <section class="section process" id="como-funciona" aria-labelledby="processo-title">
+        <div class="container">
+          <div class="process-panel">
+            <div class="process-decoration" aria-hidden="true"><svg viewBox="0 0 320 180" fill="none"><path d="M320 25H185l-35 35H80L30 110H0M320 65h-95l-35 35h-60l-45 45H0M320 105h-70l-35 35h-55l-40 40" /><circle cx="80" cy="60" r="5" /><circle cx="130" cy="100" r="5" /><circle cx="160" cy="140" r="5" /></svg></div>
+            <div class="section-heading process-heading" data-reveal><p class="eyebrow"><span class="section-index">02</span> Como funciona</p><h2 id="processo-title">Do primeiro sinal<br />ao próximo passo.</h2><p>Um caminho simples, com você por dentro de cada etapa.</p></div>
+            <ol class="process-list">
+              <li class="process-item" data-reveal>
+                <div class="process-track"><span class="process-number">01</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></div>
+                <span class="process-kicker">A conexão começa aqui</span><h3>Conte o problema</h3><p>Descreva o que mudou no uso do celular. Seu relato ajuda a entender por onde começar.</p>
+              </li>
+              <li class="process-item" data-reveal>
+                <div class="process-track"><span class="process-number">02</span><svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></div>
+                <span class="process-kicker">Clareza antes de decidir</span><h3>Receba uma avaliação</h3><p>As informações orientam a análise e a conversa sobre as possibilidades para o aparelho.</p>
+              </li>
+              <li class="process-item" data-reveal>
+                <div class="process-track"><span class="process-number">03</span><svg class="icon" aria-hidden="true"><use href="#icon-check" /></svg></div>
+                <span class="process-kicker">Decisão em conjunto</span><h3>Combine o reparo</h3><p>Com a avaliação em mãos, alinhe o orçamento e os próximos passos antes de seguir.</p>
+              </li>
+            </ol>
+            <div class="process-footnote"><span class="signal-dot" aria-hidden="true"></span> Cada aparelho tem seu contexto. A avaliação vem antes do orçamento.</div>
           </div>
-
-          <ol class="process-list">
-            <li class="process-item">
-              <span class="process-number">01</span>
-              <div>
-                <h3>Conte o problema</h3>
-                <p>Descreva o que você percebeu no aparelho pelo formulário.</p>
-              </div>
-            </li>
-            <li class="process-item">
-              <span class="process-number">02</span>
-              <div>
-                <h3>Receba uma avaliação</h3>
-                <p>As informações ajudam a orientar uma primeira análise do caso.</p>
-              </div>
-            </li>
-            <li class="process-item">
-              <span class="process-number">03</span>
-              <div>
-                <h3>Combine o reparo</h3>
-                <p>Com o cenário mais claro, os próximos passos podem ser alinhados.</p>
-              </div>
-            </li>
-          </ol>
         </div>
       </section>
 
       <section class="section values" aria-labelledby="valores-title">
-        <div class="container">
-          <div class="section-heading section-heading--centered">
-            <p class="eyebrow">O que orienta o Circuito+</p>
-            <h2 id="valores-title">Técnica com atenção às pessoas.</h2>
-          </div>
-
+        <div class="container values-layout">
+          <div class="section-heading values-heading" data-reveal><p class="eyebrow"><span class="section-index">03</span> Nossa essência</p><h2 id="valores-title">Precisão técnica.<br /><span class="muted-heading">Cuidado humano.</span></h2><p>O que conecta todas as etapas do nosso trabalho.</p></div>
           <div class="values-grid">
-            <article class="value-card">
-              <span class="value-symbol" aria-hidden="true">01</span>
-              <h3>Transparência</h3>
-              <p>Explicações diretas para que a avaliação faça sentido para você.</p>
+            <article class="value-card" data-reveal>
+              <div class="value-card__top"><svg class="value-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M4 16s4-8 12-8 12 8 12 8-4 8-12 8S4 16 4 16Z" /><circle cx="16" cy="16" r="4" /><path d="M16 3v2m0 22v2" /></svg><span aria-hidden="true">01</span></div><h3>Transparência</h3><p>O problema explicado com clareza, para você entender as opções e decidir com confiança.</p>
             </article>
-            <article class="value-card">
-              <span class="value-symbol" aria-hidden="true">02</span>
-              <h3>Cuidado</h3>
-              <p>Atenção a cada relato e a cada etapa antes de qualquer decisão.</p>
+            <article class="value-card" data-reveal>
+              <div class="value-card__top"><svg class="value-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 28S5 21 5 12a6 6 0 0 1 11-3 6 6 0 0 1 11 3c0 9-11 16-11 16Z" /><path d="M10 16h4l2-4 2 8 2-4h3" /></svg><span aria-hidden="true">02</span></div><h3>Cuidado</h3><p>Seu aparelho faz parte da sua rotina. Cada relato e cada detalhe merecem atenção.</p>
             </article>
-            <article class="value-card">
-              <span class="value-symbol" aria-hidden="true">03</span>
-              <h3>Compromisso</h3>
-              <p>Comunicação responsável para apoiar a melhor escolha para o seu caso.</p>
+            <article class="value-card" data-reveal>
+              <div class="value-card__top"><svg class="value-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="m16 3 11 5v8c0 6-7 11-11 13C12 27 5 22 5 16V8l11-5Z" /><path d="m11 16 3 3 7-7" /></svg><span aria-hidden="true">03</span></div><h3>Compromisso</h3><p>Comunicação responsável e próximos passos alinhados, do contato à decisão sobre o reparo.</p>
             </article>
           </div>
         </div>
@@ -181,96 +162,46 @@
 
       <section class="section contact" id="contato" aria-labelledby="contato-title">
         <div class="container contact-grid">
-          <div class="contact-intro">
-            <p class="eyebrow">Fale sobre seu aparelho</p>
-            <h2 id="contato-title">Solicite uma avaliação.</h2>
-            <p>
-              Conte o que está acontecendo. As informações serão usadas exclusivamente para retornar este contato e entender melhor sua solicitação.
-            </p>
-            <div class="contact-note">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="8.5"></circle>
-                <path d="M12 10.5v5M12 7.7h.01"></path>
-              </svg>
-              <p>O orçamento e os valores são definidos somente após a avaliação técnica.</p>
-            </div>
+          <div class="contact-intro" data-reveal>
+            <p class="eyebrow"><span class="section-index">04</span> Vamos reconectar?</p>
+            <h2 id="contato-title">O primeiro passo<br />é uma <span class="title-accent">conversa.</span></h2>
+            <p>Conte o que está acontecendo com seu celular. Um bom diagnóstico começa com atenção ao que você tem a dizer.</p>
+            <div class="contact-connection" aria-hidden="true"><span class="connection-node"><svg class="icon"><use href="#icon-circuit" /></svg></span><span class="connection-path"></span><span class="connection-label">Seu relato.<br /><strong>Nosso ponto de partida.</strong></span></div>
+            <div class="contact-note"><span class="contact-note__icon" aria-hidden="true"><svg viewBox="0 0 24 24" class="icon"><circle cx="12" cy="12" r="9" /><path d="M12 11v5m0-9h.01" /></svg></span><div><h3>Avaliar antes de orçar.</h3><p>O orçamento e os valores dependem da avaliação técnica do aparelho.</p></div></div>
+            <p class="contact-privacy"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="3" /><path d="M8 10V6a4 4 0 0 1 8 0v4m-4 5v2" /></svg> Seus dados serão usados exclusivamente para retornar este contato e entender a solicitação.</p>
           </div>
 
-          <div class="form-card">
+          <div class="form-card" data-reveal>
+            <div class="form-card__heading"><div><span class="form-kicker">Contato inicial</span><h3>Solicitação de avaliação</h3><p>Vamos começar pelo seu aparelho.</p></div><span class="form-heading-icon" aria-hidden="true"><svg class="icon"><use href="#icon-arrow-diagonal" /></svg></span></div>
             <form id="evaluation-form" method="post" aria-describedby="form-note form-status">
               <div class="form-grid">
-                <div class="field field--full">
-                  <label for="nome">Nome <span aria-hidden="true">*</span></label>
-                  <input id="nome" name="nome" type="text" autocomplete="name" required maxlength="120" />
-                </div>
-
-                <div class="field field--full">
-                  <label for="email">E-mail <span aria-hidden="true">*</span></label>
-                  <input id="email" name="email" type="email" autocomplete="email" required maxlength="160" inputmode="email" />
-                </div>
-
-                <div class="field">
-                  <label for="telefone">Telefone <span class="optional">(opcional)</span></label>
-                  <input id="telefone" name="telefone" type="tel" autocomplete="tel" maxlength="30" inputmode="tel" />
-                </div>
-
-                <div class="field">
-                  <label for="aparelho">Modelo do aparelho <span class="optional">(opcional)</span></label>
-                  <input id="aparelho" name="aparelho" type="text" autocomplete="off" maxlength="120" />
-                </div>
-
-                <div class="field field--full">
-                  <label for="problema">Qual é o principal problema? <span aria-hidden="true">*</span></label>
-                  <select id="problema" name="problema" required>
-                    <option value="" selected disabled>Selecione uma opção</option>
-                    <option value="Tela">Tela</option>
-                    <option value="Bateria">Bateria</option>
-                    <option value="Carregamento">Carregamento</option>
-                    <option value="Sistema/Desempenho">Sistema/Desempenho</option>
-                    <option value="Outros">Outros</option>
-                  </select>
-                </div>
-
-                <div class="field field--full">
-                  <label for="mensagem">Conte um pouco mais <span class="optional">(opcional)</span></label>
-                  <textarea id="mensagem" name="mensagem" rows="4" maxlength="1200"></textarea>
-                </div>
-
-                <div class="honeypot" aria-hidden="true">
-                  <label for="website">Website</label>
-                  <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
-                </div>
-
-                <div class="field field--full consent-field">
-                  <input id="consentimento" name="consentimento" type="checkbox" value="sim" required />
-                  <label for="consentimento">
-                    Autorizo o uso destes dados para retorno sobre esta solicitação. <span aria-hidden="true">*</span>
-                  </label>
-                </div>
+                <div class="field field--full"><label for="nome">Nome <span aria-hidden="true">*</span></label><input id="nome" name="nome" type="text" autocomplete="name" required maxlength="120" placeholder="Como podemos chamar você?" /></div>
+                <div class="field field--full"><label for="email">E-mail <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" required maxlength="160" inputmode="email" placeholder="voce@exemplo.com" /></div>
+                <div class="field"><label for="telefone">Telefone <span class="optional">(opcional)</span></label><input id="telefone" name="telefone" type="tel" autocomplete="tel" maxlength="30" inputmode="tel" placeholder="DDD + número" /></div>
+                <div class="field"><label for="aparelho">Modelo do aparelho <span class="optional">(opcional)</span></label><input id="aparelho" name="aparelho" type="text" autocomplete="off" maxlength="120" placeholder="Marca e modelo" /></div>
+                <div class="field field--full"><label for="problema">Qual é o principal problema? <span aria-hidden="true">*</span></label><select id="problema" name="problema" required><option value="" selected disabled>Selecione uma opção</option><option value="Tela">Tela</option><option value="Bateria">Bateria</option><option value="Carregamento">Carregamento</option><option value="Sistema/Desempenho">Sistema/Desempenho</option><option value="Outros">Outros</option></select></div>
+                <div class="field field--full"><label for="mensagem">Conte um pouco mais <span class="optional">(opcional)</span></label><textarea id="mensagem" name="mensagem" rows="4" maxlength="1200" placeholder="Quando começou? O que acontece ao usar o aparelho?"></textarea></div>
+                <div class="honeypot" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off" /></div>
+                <div class="field field--full consent-field"><input id="consentimento" name="consentimento" type="checkbox" value="sim" required /><label for="consentimento">Autorizo o uso destes dados para retorno sobre esta solicitação. <span aria-hidden="true">*</span></label></div>
               </div>
-
               <p class="form-note" id="form-note"><span aria-hidden="true">*</span> Campos obrigatórios</p>
-              <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-              <button class="button button--primary button--submit" type="submit">Enviar solicitação</button>
+              <p class="form-status" id="form-status" role="status" aria-live="polite" tabindex="-1"></p>
+              <button class="button button--primary button--submit" type="submit">Enviar solicitação <svg class="icon" aria-hidden="true"><use href="#icon-arrow" /></svg></button>
             </form>
-            <noscript>
-              <p class="form-status form-status--warning" role="alert">
-                Para enviar a solicitação, ative o JavaScript após a configuração do serviço.
-              </p>
-            </noscript>
+            <noscript><p class="form-status form-status--warning" role="alert">Para enviar a solicitação, ative o JavaScript após a configuração do serviço.</p></noscript>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
-        <a class="brand brand--footer" href="#inicio" aria-label="Circuito+, voltar ao início">
-          <span class="brand-mark" aria-hidden="true">C+</span>
-          <span>Circuito<span class="brand-plus">+</span></span>
-        </a>
-        <p>Projeto acadêmico fictício</p>
-        <p class="footer-tech">HTML5 · CSS3 · JavaScript · Google Apps Script · Google Sheets</p>
+      <div class="container">
+        <div class="footer-main">
+          <div class="footer-brand"><a class="brand brand--footer" href="#inicio" aria-label="Circuito+, voltar ao início"><span class="brand-mark" aria-hidden="true"><svg class="icon"><use href="#icon-circuit" /></svg></span><span>Circuito<span class="brand-plus">+</span></span></a><p>Cuidado que reconecta.</p></div>
+          <p class="academic-badge"><span aria-hidden="true">+</span> Projeto acadêmico fictício</p>
+          <div class="footer-tech"><p class="footer-label">Feito com tecnologias abertas à aprendizagem</p><p>HTML5 <span>·</span> CSS3 <span>·</span> JavaScript<br />Google Apps Script <span>·</span> Google Sheets</p></div>
+        </div>
+        <div class="footer-bottom"><p>Uma ideia de assistência técnica. Um projeto de aprendizagem.</p><span aria-hidden="true">CIRCUITO+ <span class="footer-circuit">───○</span></span></div>
       </div>
     </footer>
   </body>

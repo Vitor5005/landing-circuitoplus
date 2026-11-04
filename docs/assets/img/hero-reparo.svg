@@ -1,96 +1,122 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 580" role="img" aria-labelledby="title desc">
-  <title id="title">Smartphone em reparo com ferramentas</title>
-  <desc id="desc">Ilustração de um celular sendo cuidado com chave de fenda, pinça e elementos de diagnóstico.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 620" fill="none" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Uma nova conexão para o seu celular</title>
+  <desc id="hero-desc">Ilustração original Circuito+: smartphone em uma bancada de reparo, circuitos, componentes eletrônicos e uma chave de precisão. Um traçado de energia representa o diagnóstico e a recuperação do aparelho.</desc>
   <defs>
-    <linearGradient id="card" x1="88" y1="66" x2="630" y2="521" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#e4f7f4"/>
+    <linearGradient id="halo" x1="150" y1="122" x2="517" y2="522" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DBF5EF"/><stop offset="1" stop-color="#E7EEF8"/>
     </linearGradient>
-    <linearGradient id="screen" x1="293" y1="109" x2="432" y2="436" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#153b46"/>
-      <stop offset="1" stop-color="#0d202a"/>
+    <linearGradient id="body" x1="242" y1="118" x2="438" y2="506" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#394B61"/><stop offset=".45" stop-color="#17273A"/><stop offset="1" stop-color="#0C1728"/>
     </linearGradient>
-    <linearGradient id="teal" x1="530" y1="345" x2="609" y2="469" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#35d2bd"/>
-      <stop offset="1" stop-color="#12a895"/>
+    <linearGradient id="display" x1="277" y1="174" x2="381" y2="477" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#173A45"/><stop offset="1" stop-color="#101D30"/>
     </linearGradient>
-    <linearGradient id="amber" x1="138" y1="365" x2="219" y2="478" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#ffc754"/>
-      <stop offset="1" stop-color="#ef9918"/>
+    <linearGradient id="glass" x1="250" y1="142" x2="421" y2="446" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".12"/><stop offset=".55" stop-color="#FFFFFF" stop-opacity="0"/>
     </linearGradient>
-    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
-      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#153b46" flood-opacity=".16"/>
-    </filter>
-    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
-      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#153b46" flood-opacity=".18"/>
-    </filter>
-    <clipPath id="screenClip">
-      <rect x="292" y="108" width="147" height="330" rx="25"/>
-    </clipPath>
+    <linearGradient id="handle" x1="511" y1="309" x2="544" y2="458" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38D4BB"/><stop offset="1" stop-color="#059484"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="518" y1="185" x2="535" y2="190" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#93A5B7"/><stop offset=".48" stop-color="#E2EAF2"/><stop offset="1" stop-color="#7891A7"/>
+    </linearGradient>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" stroke="#9CB7C4" stroke-opacity=".16"/></pattern>
+    <filter id="phone-shadow" x="-70%" y="-30%" width="240%" height="180%"><feDropShadow dx="7" dy="26" stdDeviation="20" flood-color="#142E45" flood-opacity=".2"/></filter>
+    <filter id="tile-shadow" x="-40%" y="-50%" width="180%" height="220%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#254458" flood-opacity=".1"/></filter>
+    <clipPath id="screen-clip"><rect x="249" y="143" width="164" height="339" rx="25"/></clipPath>
   </defs>
 
-  <rect x="46" y="42" width="628" height="492" rx="48" fill="url(#card)"/>
-  <path d="M113 123c37-52 97-75 153-66" fill="none" stroke="#d1efea" stroke-width="22" stroke-linecap="round"/>
-  <path d="M578 431c-27 46-76 75-129 76" fill="none" stroke="#d1efea" stroke-width="18" stroke-linecap="round"/>
-  <circle cx="145" cy="164" r="11" fill="#f5a524"/>
-  <circle cx="588" cy="159" r="8" fill="#12b8a6" opacity=".8"/>
-  <circle cx="609" cy="205" r="5" fill="#f5a524" opacity=".8"/>
+  <!-- A quiet technical workspace, with traces inspired by a circuit board. -->
+  <circle cx="331" cy="309" r="242" fill="url(#halo)"/>
+  <circle cx="331" cy="309" r="242" fill="url(#grid)"/>
+  <circle cx="331" cy="309" r="207" stroke="#FFFFFF" stroke-width="1.5"/>
+  <circle cx="331" cy="309" r="272" stroke="#B1CCC9" stroke-opacity=".42" stroke-dasharray="3 11"/>
+  <path d="M83 315V268L112 239H159M448 106H484L505 127V161M515 472V510H463L442 531H396M161 499H116V460" stroke="#8ABDB8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#F6F8FB" stroke="#69B6AA" stroke-width="1.5">
+    <circle cx="83" cy="315" r="4"/><circle cx="159" cy="239" r="4"/><circle cx="448" cy="106" r="4"/>
+    <circle cx="505" cy="161" r="4"/><circle cx="396" cy="531" r="4"/><circle cx="116" cy="460" r="4"/>
+  </g>
+  <path d="M120 182h12m-6-6v12M551 274h12m-6-6v12M464 550h10m-5-5v10" stroke="#5E939A" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="201" cy="83" r="5" fill="#F5A524"/><circle cx="584" cy="372" r="4" fill="#12B8A6"/>
 
-  <!-- Smartphone -->
-  <g filter="url(#shadow)">
-    <rect x="271" y="75" width="189" height="396" rx="38" fill="#111827"/>
-    <rect x="279" y="83" width="173" height="380" rx="32" fill="#25313d"/>
-    <rect x="292" y="108" width="147" height="330" rx="25" fill="url(#screen)"/>
-    <rect x="337" y="93" width="57" height="7" rx="3.5" fill="#58636e"/>
-    <circle cx="409" cy="96.5" r="4" fill="#58636e"/>
-    <rect x="341" y="446" width="49" height="5" rx="2.5" fill="#58636e"/>
+  <!-- An offset back plate gives the device an exploded repair-view silhouette. -->
+  <g transform="rotate(12 341 302)">
+    <rect x="262" y="120" width="190" height="377" rx="35" fill="#C9DDE0" stroke="#A8C8CD" stroke-width="1.5"/>
+    <rect x="273" y="131" width="168" height="355" rx="26" stroke="#F8FFFF" stroke-opacity=".8"/>
+    <rect x="287" y="150" width="56" height="65" rx="15" fill="#BCD3D9" stroke="#A3BDC6"/>
+    <circle cx="303" cy="168" r="9" fill="#91A8B6" stroke="#E0EDF0" stroke-width="3"/>
+    <circle cx="325" cy="193" r="9" fill="#91A8B6" stroke="#E0EDF0" stroke-width="3"/>
+    <circle cx="326" cy="165" r="4" fill="#E9F4F5"/>
+    <path d="M366 219h29v62l17 17v70h-24v42h-35" stroke="#8DBAB9" stroke-width="2"/>
+    <circle cx="353" cy="410" r="4" fill="#B4D5D1" stroke="#8DBAB9" stroke-width="2"/>
   </g>
 
-  <!-- Screen diagnostics -->
-  <g clip-path="url(#screenClip)">
-    <circle cx="365" cy="267" r="90" fill="#12b8a6" opacity=".13"/>
-    <circle cx="365" cy="267" r="63" fill="none" stroke="#6de5d5" stroke-width="2" opacity=".45"/>
-    <path d="M309 320l42-46 25 22 49-64" fill="none" stroke="#61e1cf" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M309 349h113" stroke="#ffffff" stroke-opacity=".17" stroke-width="3" stroke-linecap="round"/>
-    <path d="M309 365h71" stroke="#ffffff" stroke-opacity=".12" stroke-width="3" stroke-linecap="round"/>
-    <rect x="319" y="139" width="93" height="21" rx="10.5" fill="#ffffff" fill-opacity=".11"/>
-    <circle cx="333" cy="149.5" r="4.5" fill="#f5a524"/>
-    <path d="M345 149.5h50" stroke="#fff" stroke-width="3" stroke-opacity=".55" stroke-linecap="round"/>
-  </g>
-  <path d="M325 211l13 13 16-25 18 48 18-29 23 18" fill="none" stroke="#f5a524" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="325" cy="211" r="5" fill="#f5a524"/>
-  <circle cx="413" cy="236" r="5" fill="#f5a524"/>
-
-  <!-- Screwdriver -->
-  <g transform="rotate(31 526 388)" filter="url(#softShadow)">
-    <path d="M521 262h18l9 77h-36z" fill="#a8e8de"/>
-    <path d="M525 226h10l6 36h-22z" fill="#65737c"/>
-    <path d="M530 202l8 25h-16z" fill="#a6b1b7"/>
-    <rect x="500" y="328" width="60" height="122" rx="25" fill="url(#teal)"/>
-    <rect x="512" y="344" width="12" height="90" rx="6" fill="#82eadc" opacity=".7"/>
-    <path d="M516 468h28l7 20h-42z" fill="#0d887a"/>
-  </g>
-
-  <!-- Repair tweezer -->
-  <g transform="rotate(-22 193 341)" fill="none" stroke-linecap="round" filter="url(#softShadow)">
-    <path d="M188 198c-12 48-14 97 0 149 7 28 10 66 3 108" stroke="#6e7e87" stroke-width="12"/>
-    <path d="M213 198c11 48 13 97-1 149-8 28-11 66-4 108" stroke="#a1adb3" stroke-width="12"/>
-    <path d="M196 200l5-22 6 22" stroke="#f5a524" stroke-width="7"/>
+  <!-- The handset screen turns an electrical pulse into a visual brand motif. -->
+  <g transform="rotate(-9 331 309)">
+    <g filter="url(#phone-shadow)">
+      <rect x="232" y="115" width="199" height="392" rx="38" fill="url(#body)"/>
+      <rect x="237" y="120" width="189" height="382" rx="34" stroke="#6F8194" stroke-opacity=".65"/>
+      <rect x="249" y="143" width="164" height="339" rx="25" fill="url(#display)"/>
+    </g>
+    <path d="M231 195v25m0 12v39m201-54v48" stroke="#6D8295" stroke-width="3" stroke-linecap="round"/>
+    <g clip-path="url(#screen-clip)">
+      <circle cx="331" cy="308" r="113" fill="#12B8A6" fill-opacity=".045"/>
+      <circle cx="331" cy="308" r="77" stroke="#5AD6BD" stroke-opacity=".14"/>
+      <circle cx="331" cy="308" r="61" stroke="#5AD6BD" stroke-opacity=".14" stroke-dasharray="2 7"/>
+      <path d="M249 314h37l15-28 17 48 16-42 14 22h21l12-18h32" stroke="#56E0C2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="286" cy="314" r="4" fill="#56E0C2"/><circle cx="369" cy="314" r="4" fill="#56E0C2"/>
+      <path d="M278 256v-21h26M360 235h22v21M382 357v22h-23M304 379h-26v-22" stroke="#66A89F" stroke-opacity=".6" stroke-width="1.5" stroke-linecap="round"/>
+      <rect x="249" y="143" width="164" height="339" fill="url(#glass)"/>
+    </g>
+    <rect x="304" y="151" width="56" height="14" rx="7" fill="#091722"/><circle cx="349" cy="158" r="3" fill="#244A55"/>
+    <path d="M272 186h28m-28 8h17" stroke="#D0F5ED" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+    <g stroke="#C2EEE4" stroke-width="1.5" stroke-linecap="round"><path d="M379 190v-4m4 4v-7m4 7v-10"/><rect x="392" y="180" width="9" height="10" rx="2"/></g>
+    <text x="331" y="414" fill="#D8F8F0" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="2.2">CIRCUITO+</text>
+    <path d="M299 434h64M312 444h38" stroke="#79AAA7" stroke-opacity=".5" stroke-width="3" stroke-linecap="round"/>
+    <rect x="308" y="470" width="47" height="3" rx="1.5" fill="#E3F8F5" fill-opacity=".5"/>
   </g>
 
-  <!-- Small repair tile -->
-  <g filter="url(#softShadow)">
-    <rect x="107" y="364" width="112" height="101" rx="22" fill="#fff"/>
-    <rect x="124" y="381" width="38" height="38" rx="11" fill="url(#amber)"/>
-    <path d="M136 400l7 7 12-15" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M173 391h28M173 407h19M125 437h76" stroke="#b9c6cb" stroke-width="5" stroke-linecap="round"/>
+  <!-- Precision screwdriver: brushed metal, a teal handle and fine grip grooves. -->
+  <g transform="rotate(23 522 334)" filter="url(#tile-shadow)">
+    <path d="M518 183h10l3 22-3 8v113h-10V213l-3-8 3-22Z" fill="url(#metal)"/>
+    <path d="M521 183v-15h4v15" fill="#6D8397"/>
+    <rect x="507" y="313" width="32" height="20" rx="7" fill="#163E48"/>
+    <rect x="499" y="328" width="48" height="117" rx="20" fill="url(#handle)"/>
+    <path d="M510 345v77M523 342v82M536 345v77" stroke="#057C73" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+    <path d="M508 342v78" stroke="#91F0DA" stroke-opacity=".65" stroke-width="2" stroke-linecap="round"/>
+    <rect x="508" y="442" width="30" height="14" rx="6" fill="#146066"/>
   </g>
 
-  <!-- Signal stars -->
-  <g fill="#12b8a6">
-    <path d="M511 103l4 10 10 4-10 4-4 10-4-10-10-4 10-4z"/>
-    <path d="M590 295l3 8 8 3-8 3-3 8-3-8-8-3 8-3z" opacity=".75"/>
+  <!-- A component tile extends the circuit language beyond the handset. -->
+  <g transform="rotate(-8 157 161)" filter="url(#tile-shadow)">
+    <rect x="107" y="112" width="99" height="98" rx="23" fill="#FFFFFF" stroke="#DCEBEA"/>
+    <rect x="134" y="139" width="45" height="44" rx="8" fill="#E2F6EF" stroke="#81C6B4"/>
+    <rect x="143" y="148" width="27" height="26" rx="4" fill="#153F45"/>
+    <path d="M145 131v8m12-8v8m12-8v8m-24 44v8m12-8v8m12-8v8m-43-42h8m-8 12h8m-8 12h8m45-24h8m-8 12h8m-8 12h8" stroke="#6EA99C" stroke-width="2" stroke-linecap="round"/>
+    <path d="m158 152-7 10h7l-3 9 9-12h-7l1-7Z" fill="#67DDC0"/>
   </g>
-  <path d="M490 163c13 8 22 21 26 36" fill="none" stroke="#f5a524" stroke-width="5" stroke-linecap="round"/>
-  <path d="M503 145c21 12 35 32 40 55" fill="none" stroke="#f5a524" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+
+  <!-- Neutral diagnostic copy, without fabricated service metrics. -->
+  <g filter="url(#tile-shadow)">
+    <rect x="58" y="374" width="182" height="91" rx="19" fill="#FFFFFF" stroke="#DAE7E8"/>
+    <rect x="74" y="391" width="34" height="34" rx="11" fill="#E8F8F2"/>
+    <circle cx="89" cy="406" r="7" stroke="#128878" stroke-width="1.7"/>
+    <path d="m94 411 5 5M85 406h8m-4-4v8" stroke="#128878" stroke-width="1.7" stroke-linecap="round"/>
+    <text x="119" y="405" fill="#162F43" font-family="Arial, sans-serif" font-size="11" font-weight="700">Diagnóstico claro</text>
+    <text x="119" y="421" fill="#627588" font-family="Arial, sans-serif" font-size="9">Cuidado em cada detalhe.</text>
+    <path d="M76 445h35l8-8 8 8h30l6-8 6 8h51" stroke="#B6DED4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="rotate(8 464 125)" filter="url(#tile-shadow)">
+    <rect x="418" y="99" width="107" height="45" rx="14" fill="#FFF8E9" stroke="#F0DAB1"/>
+    <path d="m437 110-6 10h7l-3 9 10-13h-8l3-6h-3Z" fill="#C78110"/>
+    <text x="455" y="125" fill="#826025" font-family="Arial, sans-serif" font-size="10" font-weight="700">Nova energia</text>
+  </g>
+
+  <!-- Fasteners and small bench marks tie the composition back to repair. -->
+  <g stroke="#89A3B1" stroke-width="2" stroke-linecap="round">
+    <circle cx="234" cy="538" r="5" fill="#E6EEF1"/><path d="m231 535 6 6"/>
+    <circle cx="462" cy="483" r="5" fill="#E6EEF1"/><path d="m459 486 6-6"/>
+  </g>
+  <path d="M269 551h42m9 0h7M102 331h12m-6-6v12" stroke="#7EB0AB" stroke-width="2" stroke-linecap="round"/>
+  <path d="m431 70 3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z" fill="#12B8A6"/>
 </svg>

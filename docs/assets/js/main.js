@@ -1,4 +1,4 @@
-const FORM_ENDPOINT = "";
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbz418pm7yE0a09JBGnEAVh2Lt4MZo1neWkBJujkkJ_6jp6BM6YdHN_JdPJuYryI_r8Y/exec";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#evaluation-form");
@@ -45,3 +45,46 @@ function getTrustedEndpoint(value) {
 
   return "";
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const motionPreference = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+  if (motionPreference.matches || !("IntersectionObserver" in window)) {
+    return;
+  }
+
+  const reveal = (element) => {
+    element.classList.add("is-revealed");
+    observer.unobserve(element);
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        reveal(entry.target);
+      }
+    });
+  }, { rootMargin: "0px 0px 32px 0px", threshold: 0.05 });
+
+  document.querySelectorAll("[data-reveal]").forEach((element) => {
+    if (element.getBoundingClientRect().top >= window.innerHeight) {
+      observer.observe(element);
+      element.classList.add("is-reveal-ready");
+    }
+  });
+
+  document.addEventListener("focusin", (event) => {
+    const element = event.target.closest(".is-reveal-ready");
+
+    if (element) {
+      reveal(element);
+    }
+  });
+
+  motionPreference.addEventListener("change", (event) => {
+    if (event.matches) {
+      document.querySelectorAll(".is-reveal-ready").forEach(reveal);
+      observer.disconnect();
+    }
+  });
+});
