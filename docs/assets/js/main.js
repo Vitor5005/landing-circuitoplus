@@ -1,4 +1,4 @@
-const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbz418pm7yE0a09JBGnEAVh2Lt4MZo1neWkBJujkkJ_6jp6BM6YdHN_JdPJuYryI_r8Y/exec";
+const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxGqCg3zbBsO_B6QW9HTLzyitaOV0xuQUhhlmbFjtAHJdyggh88zl5qTkl4WpKEofZ-/exec";
 
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#evaluation-form");

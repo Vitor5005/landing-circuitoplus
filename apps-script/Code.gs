@@ -1,4 +1,4 @@
-const SITE_URL = "";
+const SITE_URL = "https://vitor5005.github.io/landing-circuitoplus/";
 
 const SHEET_NAME = "Solicitacoes";
 const HEADERS = [
@@ -63,10 +63,10 @@ function doPost(e) {
 
   let lock;
   try {
-    lock = LockService.getDocumentLock();
+    lock = LockService.getScriptLock();
     lock.waitLock(30000);
 
-    const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+    const spreadsheet = SpreadsheetApp.openById("1ZTheFx3JDFj9qCZzkcOB64Rx4cKUO0NRv7mBAkJoKyA");
     if (!spreadsheet) {
       throw new Error("Planilha vinculada não encontrada.");
     }
@@ -191,4 +191,20 @@ function escapeHtml_(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function testarCadastro() {
+  const resposta = doPost({
+    parameter: {
+      nome: "Teste Circuito+",
+      email: "teste@example.com",
+      telefone: "",
+      aparelho: "Celular de teste",
+      problema: "Bateria",
+      mensagem: "Verificação de gravação",
+      website: "",
+      consentimento: "consentimento"
+    }
+  });
+  console.log(resposta.getContent().includes("Solicitação recebida!") ? "GRAVACAO_OK" : "GRAVACAO_FALHOU");
 }
